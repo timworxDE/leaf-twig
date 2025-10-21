@@ -41,7 +41,7 @@ $twig->config(['templates'], ['cache' => 'var/cache']);
 ```
 
 ```php
-echo $blade->render('index.html.twig', ['name' => 'Michael Darko']);
+echo $twig->render('index.html.twig', ['name' => 'Michael Darko']);
 exit;
 ```
 
