@@ -41,7 +41,7 @@ $twig->config(['templates'], ['cache' => 'var/cache']);
 ```
 
 ```php
-echo $twig->render('index.html.twig', ['name' => 'Michael Darko']);
+echo $twig->render('index.html.twig', ['name' => 'John Doe']);
 exit;
 ```
 
@@ -79,8 +79,8 @@ $twig->addExtension(new \App\Extension\MyExtension()); // Your own created exten
 Which allows you to use the following in your blade template:
 
 ```
-MD5 hashed string with function: {{ md5('my string') }}
-MD5 hashed string with filter: {{ 'my string'|md5 }}
+MD5 hashed string with function: {{ md5(name) }}
+MD5 hashed string with filter: {{ name|md5 }}
 ```
 
 You can also set global variables:
